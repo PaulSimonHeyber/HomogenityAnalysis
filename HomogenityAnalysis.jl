@@ -407,13 +407,3 @@ end
 
 
 
-mutable struct Category{Ob, Mor :: Type{Type}, Prop}
-
-    Id :: Map(Ob, Union(Mor))
-    Hom :: Map(NTuple{Ob, 2}, Mor)
-    Comp :: Map(NTuple{Ob, 3}, Map(Mor, Mor))
-    PropEv :: Dict(Prop, Any)
-   
- end
- 
- 
